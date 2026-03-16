@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Link Tree - ArzXD</title>
+  <style>
+    /* Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #0a0a0a; /* Fallback color */
+      color: white;
+      overflow: hidden;
+    }
+
+    /* Background Blur Effect */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://files.catbox.moe/66s7nv.jpg');
+      background-size: cover;
+      background-position: center;
+      filter: blur(20px) brightness(0.4);
+      z-index: -1;
+      transform: scale(1.1); /* Menghindari white edge saat blur */
+    }
+
+    /* Container Utama */
+    .isi-web {
+      width: 90%;
+      max-width: 380px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 24px;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      animation: fadeIn 0.8s ease-out;
+    }
+
+    /* Bagian Logo/Avatar */
+    .imagenya img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 3px solid rgba(255, 255, 255, 0.8);
+      object-fit: cover;
+      margin-bottom: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .imagenya p {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 30px;
+      color: rgba(255, 255, 255, 0.95);
+    }
+
+    /* Link Buttons */
+    .dalemannya {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .btn {
+      display: block;
+      text-decoration: none;
+      color: white;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 14px;
+      border-radius: 12px;
+      font-weight: 500;
+      font-size: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.9);
+      color: #000;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Efek Warna Hover Spesifik (Optional) */
+    .whatsapp:hover { background-color: #25d366; border-color: #25d366; color: white; }
+    .telegram:hover { background-color: #0088cc; border-color: #0088cc; color: white; }
+    .instagram:hover { background-color: #e1306c; border-color: #e1306c; color: white; }
+
+    /* Animasi Masuk */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsif untuk Mobile Kecil */
+    @media (max-height: 600px) {
+      .isi-web { padding: 20px; }
+      .imagenya img { width: 80px; height: 80px; }
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="isi-web">
+    <div class="imagenya">
+      <img src="https://files.catbox.moe/66s7nv.jpg" alt="ArzXD Logo">
+      <p>ArzXD Link Tree</p>
+    </div>
+
+    <div class="dalemannya">
+      <a href="https://wa.me/628998052763" class="btn whatsapp" target="_blank">WhatsApp</a>
+      <a href="https://t.me/ArzXDFvckX" class="btn telegram" target="_blank">Telegram</a>
+      <a href="https://instagram.com/@onlyarzxdoffc" class="btn instagram" target="_blank">Instagram</a>
+      <br>
+      <p><b>Channel Owner</b></p>
+      <a href="https://t.me/ArzXDInformation" class="btn telegram" target="_blank">Channel Telegram</a>
+      <a href="https://whatsapp.com/channel/0029VbBnr3YKbYMPWrdvt201" class="btn whatsapp" target="_blank">Channel Telegram</a>
+    </div>
+  </div>
+  
+</body>
+</html>
